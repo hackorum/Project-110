@@ -28,9 +28,8 @@ def takeSamples(no_of_samples):
 
 mean_list = []
 
-for i in range(1000):
-    # Thirty times did not work so I did 10 times
-    set_of_means = takeSamples(10)
+for i in range(100):
+    set_of_means = takeSamples(30)
     mean_list.append(set_of_means)
 
 fig = ff.create_distplot([mean_list], ["Claps"], show_hist=False)
